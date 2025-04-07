@@ -55,12 +55,12 @@ export default function PasswordGenerator() {
 
   const copyToClipboard = (): void => {
     navigator.clipboard.writeText(password).then(
-      () => {
-        alert("Password copied to clipboard!")
-      },
-      (error) => {
-        alert("Failed to copy password to clipboard.")
-      }
+        () => {
+          alert("Password copied to clipboard!")
+        },
+        () => {
+          alert("Failed to copy password to clipboard.")
+        }
     )
   }
 
